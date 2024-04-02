@@ -7,6 +7,7 @@ import { getCacheInvalidationKey, getPlugins } from './utils/vite';
 const rootDir = resolve(__dirname);
 const srcDir = resolve(rootDir, 'src');
 const pagesDir = resolve(srcDir, 'pages');
+const componentsDir = resolve(srcDir, 'components');
 
 const isDev = process.env.__DEV__ === 'true';
 const isProduction = !isDev;
@@ -18,6 +19,7 @@ export default defineConfig({
       '@src': srcDir,
       '@assets': resolve(srcDir, 'assets'),
       '@pages': pagesDir,
+      '@components': componentsDir,
     },
   },
   plugins: [...getPlugins(isDev), react()],

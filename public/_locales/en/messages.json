@@ -1,10 +1,10 @@
 {
   "extensionDescription": {
-    "description": "Extension description",
-    "message": "Chrome extension boilerplate developed with Vite, React and Typescript"
+    "description": "Enhance your browsing experience with PureOmega - a sleek and powerful Chrome extension designed to streamline your online activities and boost productivity.",
+    "message": "Easily and quickly manage and switch multiple agent settings."
   },
   "extensionName": {
-    "description": "Extension name",
-    "message": "Chrome extension boilerplate"
+    "description": "Enhance your browsing experience with PureOmega - a sleek and powerful Chrome extension designed to streamline your online activities and boost productivity.",
+    "message": "PureOmega--Proxy Switchy"
   }
 }
