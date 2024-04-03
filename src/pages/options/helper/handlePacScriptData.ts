@@ -4,10 +4,11 @@ export const fetchAndProcessGFWList = gfwListUrl => {
     .then(base64Data => {
       const decodedData = atob(base64Data);
       const rules = decodedData.split('\n');
-
-      const validUrls = rules
+      const ruleList = [];
+      const ruleLists = rules
         .filter(line => line && !line.startsWith('!') && !line.startsWith('['))
         .map(line => {
+          ruleList.push(line);
           if (line.startsWith('@@')) {
             // 处理白名单规则，移除前缀
             return 'WhiteList: ' + line.slice(2);
@@ -28,9 +29,9 @@ export const fetchAndProcessGFWList = gfwListUrl => {
             return 'Contains: ' + line;
           }
         });
-
-      // 示例：展示转换后的部分规则
-      console.log(validUrls.slice(0, 20));
+      console.info(ruleList);
+      console.info('🥀 ~ file:handlePacScriptData line:31 -----', ruleLists);
+      return ruleLists;
     })
     .catch(error => console.error('Error fetching or decoding GFWList:', error));
 };

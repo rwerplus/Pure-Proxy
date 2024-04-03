@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client';
 import Options from '@pages/options/Options';
 import '@pages/options/index.css';
 import refreshOnUpdate from 'virtual:reload-on-update-in-view';
+import 'tdesign-react/esm/style/index.js';
 import '@assets/style/ui.css';
 
 refreshOnUpdate('pages/options');
-
 function init() {
   const appContainer = document.querySelector('#app-container');
   if (!appContainer) {
