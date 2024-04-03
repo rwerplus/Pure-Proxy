@@ -1,8 +1,8 @@
 import React from 'react';
 import '@pages/options/Options.css';
-import { Button } from '@components/ui/button';
 
 const Options: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleClick = () => {
     const config = {
       mode: 'fixed_servers',
@@ -20,7 +20,7 @@ const Options: React.FC = () => {
   return (
     <div className="container">
       Options---
-      <Button onClick={handleClick}></Button>
+      {/* <Button onClick={handleClick}>测试中</Button> */}
     </div>
   );
 };

@@ -1,8 +1,6 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
 import path, { resolve } from 'path';
 import { getCacheInvalidationKey, getPlugins } from './utils/vite';
 
@@ -56,11 +54,6 @@ export default defineConfig({
           return `assets/[ext]/${assetFileName}.chunk.[ext]`;
         },
       },
-    },
-  },
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
     },
   },
   test: {
