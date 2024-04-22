@@ -8,7 +8,7 @@ export const pacScriptData = `
 var direct = "__DIRECT__";
 if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
 
-var wall_proxy = function(){ return "PROXY 127.0.0.1:15732"; };
+var wall_proxy = function(){ return "PROXY 127.0.0.1:20080"; };
 var wall_v6_proxy = function(){ return "__PROXY__"; };
 
 var nowall_proxy = function(){ return direct; };

@@ -15,6 +15,7 @@ const isProduction = !isDev;
 export default defineConfig({
   resolve: {
     alias: {
+      '@': srcDir,
       '@root': rootDir,
       '@src': srcDir,
       '@assets': resolve(srcDir, 'assets'),

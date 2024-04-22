@@ -26,7 +26,7 @@ const manifest = {
   },
   action: {
     default_popup: 'src/pages/popup/index.html',
-    default_icon: 'icon-34.png',
+    default_icon: 'icon-48.png',
   },
   chrome_url_overrides: {
     newtab: 'src/pages/newtab/index.html',
@@ -46,10 +46,10 @@ const manifest = {
       js: ['src/pages/contentUI/index.js'],
     },
   ],
-  devtools_page: 'src/pages/devtools/index.html',
+  // devtools_page: 'src/pages/devtools/index.html',
   web_accessible_resources: [
     {
-      resources: ['assets/js/*.js', 'assets/css/*.css', 'icon-128.png', 'icon-34.png'],
+      resources: ['assets/js/*.js', 'assets/css/*.css', 'icon-128.png', 'icon-48.png'],
       matches: ['*://*/*'],
     },
   ],
