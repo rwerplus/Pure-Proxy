@@ -1,0 +1,77 @@
+@media (width >= 692px) {body {
+    --page-max-width: 660px;
+}
+  }
+
+  @media (width >= 826px) {body {
+    --page-max-width: 758px;
+}
+  }
+
+  @media (width >= 946px) {body {
+    --page-max-width: 858px;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    margin: 0 auto 18px;
+}
+.time{
+    margin-right: 19px;
+    font-size: 50px;
+    line-height: 73px;
+    word-spacing: -15px;
+    white-space: nowrap;
+}
+.date{
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+    white-space: nowrap;
+}
+
+body .is-background {
+    --primary-text-color: #fff;
+    --button-hover-overlay: rgb(0 0 0 / 0.4);
+    --secondary-text-opacity: rgba(255 255 255 / 0.7);
+    --button-active-overlay: rgb(0 0 0 / 0.4);
+    --button-bg-opacity: rgb(255 255 255 / 0.12);
+    --button-bg-hover-opacity: rgb(255 255 255 / 0.2);
+    --button-bg-active-opacity: rgb(255 255 255 / 0.3);
+    --input-bg-opacity: rgb(0 0 0 / 0.25);
+    --input-text-color: #fff;
+    --input-placeholder-opacity: rgb(255 255 255 / 0.5);
+    --service-bg-opacity: rgb(0 0 0 / 0.4);
+    --service-bg-hover-opacity: rgb(0 0 0 / 0.7);
+    --action-button-bg-opacity: rgb(0 0 0 / 0.4);
+    --title-text-opacity: rgb(255 255 255 / 0.85);
+
+    /* Workspaces */
+    --team-buttons-bg-opacity: rgb(0 0 0 / 0.4);
+    --team-buttons-hover-opacity: rgb(0 0 0 / 0.5);
+    --team-buttons-active-opacity: rgb(0 0 0 / 0.35);
+    --dot-button-hover-overlay: rgb(0 0 0 / 0.4);
+    --dot-button-active-overlay: rgb(0 0 0 / 0.5);
+
+    /* Search */
+    --search-bg-opacity: rgb(0 0 0 / 0.4);
+    --search-placeholder-text-opacity: rgb(255 255 255 / 0.7);
+    --search-icon-filter: invert(1);
+
+    /* App */
+    --popup-text-color: #4d4d4d;
+    --app-hover-bg-color: #eff1f4;
+    --settings-button-icon-color: #fff;
+    --settings-button-hover-overlay: rgb(255 255 255 / 0.1);
+    --drag-handle-color-opacity: rgb(255 255 255 / 0.7);
+    --hide-button-border: none;
+    --hide-button-bg: var(--action-button-bg-opacity);
+    --buttons-hover-bg-color: var(--app-hover-bg-color);
+    --recipe-chooser-bg-color: #f8f8f8;
+    --vertical-tabs-banner-text-opacity: #ffffffb2;
+
+    /* New bill */
+    --billing-btn-bg-opacity: rgba(0 0 0 / 0.4);
+  }
