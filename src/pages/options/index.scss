@@ -1,0 +1,11 @@
+body {
+  @media (width >= 692px) {
+    --page-max-width: 660px;
+  }
+  @media (width >= 826px) {
+    --page-max-width: 758px;
+  }
+  @media (width >= 946px) {
+    --page-max-width: 858px;
+  }
+}

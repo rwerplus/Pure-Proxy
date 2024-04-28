@@ -7,6 +7,7 @@ declare module 'virtual:reload-on-update-in-view' {
   const refreshOnUpdate: (watchPath: string) => void;
   export default refreshOnUpdate;
 }
+declare module 'webextension-polyfill';
 
 declare module '*.svg' {
   import React = require('react');

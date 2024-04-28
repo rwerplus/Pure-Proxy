@@ -1,8 +1,9 @@
-import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Options from '@pages/options/Options';
-import '@pages/options/index.css';
+import '@pages/options/index.scss';
 import refreshOnUpdate from 'virtual:reload-on-update-in-view';
+import '@assets/style/theme.css';
+import OptionsLayout from './layout/OptionsLayout';
+import '@fontsource/roboto/500.css';
 
 refreshOnUpdate('pages/options');
 function init() {
@@ -11,7 +12,7 @@ function init() {
     throw new Error('Can not find #app-container');
   }
   const root = createRoot(appContainer);
-  root.render(<Options />);
+  root.render(<OptionsLayout />);
 }
 
 init();

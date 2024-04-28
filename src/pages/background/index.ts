@@ -22,7 +22,7 @@ chrome.runtime.onMessage.addListener(
       clearProxy();
     } else {
       console.info('🥀 ~ file:index line:34 -----', request);
-      setTemporaryProxy('127.0.0.1', '20090');
+      setTemporaryProxy('127.0.0.1', '15732');
       // if (request.proxy) {
       //   chrome.proxy.settings.set({ value: request.proxy, scope: 'regular' }, function () {});
       // }
